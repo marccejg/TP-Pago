@@ -1,9 +1,9 @@
 import { TarjetaCredito } from "./tarjetaCredito";
 import { TarjetaDebito } from "./tarjetaDebito";
 import { Mercadopago } from "./mercadopago";
-let pagoCredito1=new TarjetaCredito(452454124541512);
-let pagoDebito1=new TarjetaDebito(500549451455845,5000);
-let pagoMercadoPago=new Mercadopago("mouse.monitor","libro.lapiz", 150000);
+const pagoCredito1=new TarjetaCredito(452454124541512);
+const pagoDebito1=new TarjetaDebito(500549451455845,5000);
+const pagoMercadoPago=new Mercadopago("mouse.monitor","libro.lapiz", 150000);
 
 pagoCredito1.procesarPago();
 pagoCredito1.generarRecibo();

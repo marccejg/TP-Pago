@@ -9,6 +9,21 @@ export class TarjetaDebito implements iPago {
       this.entidad = "Visa";
       this.numeroDeTarjeta = pNumeroDeTarjeta;
       this.importe=pImporte
+
+    }
+    getNumeroDeTarjeta(){
+        return this.numeroDeTarjeta
+
+    }
+    setNumeroDeTarjeta(pNumeroDeTarjeta:number):void{
+         this.numeroDeTarjeta=pNumeroDeTarjeta
+
+    }
+    getImporte(){
+        return this.importe
+    }
+    setImporte(pImporte:number):void{
+        this.importe=pImporte;
     }
     procesarPago(): void {
       console.log(`La tarjeta de Debito numero ${this.numeroDeTarjeta} pertenece a la entidad ${this.entidad} realizo un pago de $ ${this.importe}`)

@@ -14,6 +14,28 @@ export class Mercadopago implements iPago {
       this.importe = pImporte
       
     }
+    getAliasTitular(){
+        return this.aliasTitular;
+
+    }
+    setAliasTitular(pAliasTitular:string):void{
+         this.aliasTitular=pAliasTitular;
+
+    }
+    getAliasDestino(){
+        return this.aliasDestino;
+
+    }
+    setAliasDestino(pAliasDestino:string):void{
+         this.aliasDestino=pAliasDestino;
+
+    }
+    getImporte(){
+        return this.importe;
+    }
+    setImporte(pImporte:number):void{
+        this.importe=pImporte;
+    }
   
     procesarPago(): void {
       console.log(`Transferir desde alias: ${this.aliasTitular}  a alias: ${this.aliasDestino} el importe de $${this.importe}`)
